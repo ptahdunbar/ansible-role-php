@@ -18,3 +18,4 @@
     path: "{{ php_fpm_listen }}"
     owner: "{{ php_fpm_pool_user }}"
     group: "{{ php_fpm_pool_group }}"
+  when: php_fpm_use_socket
