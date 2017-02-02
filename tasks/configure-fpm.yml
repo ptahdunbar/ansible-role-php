@@ -37,8 +37,8 @@
   template:
     src: www.conf.j2
     dest: "{{ php_fpm_pool_conf_path }}"
-    owner: root
-    group: root
+    owner: "{{ php_fpm_pool_user }}"
+    group: "{{ php_fpm_pool_group }}"
     mode: 0644
     force: no
 
